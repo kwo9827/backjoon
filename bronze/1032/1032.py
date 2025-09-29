@@ -7,6 +7,7 @@ names = [input().strip() for _ in range(N)]
 L = len(names[0])
 pattern = []
 
+
 for i in range(L):
     ch = names[0][i]
     ok = True
@@ -16,5 +17,6 @@ for i in range(L):
             ok = False
             break
     pattern.append(ch if ok else '?')
+
 
 print(''.join(pattern))
