@@ -44,6 +44,7 @@ for _ in range(T):
     bit = FenwickTree(size)
     result = 0
 
+
     for x, y in islands:
         result += bit.query(y)
         bit.update(y, 1)
